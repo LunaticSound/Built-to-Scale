@@ -1,8 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_cat_scale(){
-	var quarters = global.beat_max/4;
-	var halves = global.beat_max/2;
 	if(!skill_pause && !damage){
 		if(grow){
 			image_xscale += grow_size;

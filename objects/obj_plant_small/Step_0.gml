@@ -9,7 +9,7 @@ if (round(image_index) == 8 && !shot_happened){
 	shot_happened = true;
 	alarm[0] = 10;
 	with(shot){
-	direction = 90;
+	direction = other.shot_dir;
 	speed = other.shot_speed;
 	image_xscale = other.shot_size;
 	image_yscale = other.shot_size;

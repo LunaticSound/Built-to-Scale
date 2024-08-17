@@ -12,3 +12,5 @@ if (!face_right) sprite_index = damage_sprite_l;
 
 x = previous_x;
 y = previous_y;
+
+life -= 1;

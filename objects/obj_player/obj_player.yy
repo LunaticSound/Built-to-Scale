@@ -41,9 +41,6 @@
     "name":"spr_jelly",
     "path":"sprites/spr_jelly/spr_jelly.yy",
   },
-  "spriteMaskId":{
-    "name":"spr_collision_player",
-    "path":"sprites/spr_collision_player/spr_collision_player.yy",
-  },
+  "spriteMaskId":null,
   "visible":true,
 }

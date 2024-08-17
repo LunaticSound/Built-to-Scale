@@ -27,10 +27,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_bgr_gears",
-    "path":"sprites/spr_bgr_gears/spr_bgr_gears.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

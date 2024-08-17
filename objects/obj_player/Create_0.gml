@@ -1,6 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+quarters = global.beat_max/4;
+halves = global.beat_max/2;
+
 spd = 6;
 dash = false;
 dash_count = 0;
@@ -29,6 +32,7 @@ damage_sprite_l = spr_jelly_flip;
 
 skill_pause_snd = [snd_skill_pause, snd_skill_pause_1, snd_skill_pause_2];
 
+life = 5;
 heart_1 = instance_create_layer(64, 64, "Inst_upper", obj_heart);
 heart_2 = instance_create_layer(128, 64, "Inst_upper", obj_heart);
 heart_3 = instance_create_layer(192, 64, "Inst_upper", obj_heart);

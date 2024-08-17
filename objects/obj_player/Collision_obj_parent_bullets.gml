@@ -13,3 +13,5 @@ image_yscale = 0.25;
 
 if (face_right) sprite_index = damage_sprite_r;
 if (!face_right) sprite_index = damage_sprite_l;
+
+life -= 1;
