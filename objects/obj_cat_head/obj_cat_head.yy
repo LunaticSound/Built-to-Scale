@@ -8,8 +8,8 @@
   "name":"obj_cat_head",
   "overriddenProperties":[],
   "parent":{
-    "name":"Cat",
-    "path":"folders/Objects/Cat.yy",
+    "name":"Player",
+    "path":"folders/Objects/Player.yy",
   },
   "parentObjectId":null,
   "persistent":false,

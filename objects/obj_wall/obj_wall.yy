@@ -6,8 +6,8 @@
   "name":"obj_wall",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Walls",
+    "path":"folders/Objects/Walls.yy",
   },
   "parentObjectId":{
     "name":"obj_parent_wall",
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_wall",
-    "path":"sprites/spr_wall/spr_wall.yy",
+    "name":"spr_pipe_1",
+    "path":"sprites/spr_pipe_1/spr_pipe_1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

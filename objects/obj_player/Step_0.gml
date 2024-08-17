@@ -3,3 +3,4 @@
 
 scr_movement();
 scr_cat_scale();
+scr_dash();
