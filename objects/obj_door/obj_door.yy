@@ -12,7 +12,10 @@
     "name":"Walls",
     "path":"folders/Objects/Walls.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_parent_wall",
+    "path":"objects/obj_parent_wall/obj_parent_wall.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -31,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_wall",
-    "path":"sprites/spr_wall/spr_wall.yy",
+    "name":"spr_door",
+    "path":"sprites/spr_door/spr_door.yy",
   },
   "spriteMaskId":null,
   "visible":true,

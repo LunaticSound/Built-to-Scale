@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"Cat",
-    "path":"folders/Sprites/Cat.yy",
+    "path":"folders/Sprites/Player/Cat.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

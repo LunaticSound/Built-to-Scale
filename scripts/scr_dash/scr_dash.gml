@@ -8,7 +8,8 @@ if (dash){
 if(dash_charging){
 	if(!dash or dash_count >= dash_max ){
 		// mach coolen dash scheiß
-		// dash_act = true;
+		audio_stop_sound(dash_charge_sound);
+		audio_play_sound(snd_dash, 1, false);
 		dash_charging = false;
 		dash_act = true;
 		dash = false;
@@ -17,14 +18,14 @@ if(dash_charging){
 
 if(dash_act){
 	if(face_right){
-		x += round(dash_count /2);
-		dash_count -= round(dash_count/6);
+		x += round(dash_count);
+		dash_count -= round(dash_count/4);
 		}
 	if(!face_right){
-		x -= round(dash_count /2);
-		dash_count -= round(dash_count/6);
+		x -= round(dash_count);
+		dash_count -= round(dash_count/4);
 		}
 	}
 
-if(dash_count <= 5) dash_act = false;
+if(dash_count <= 3) dash_act = false;
 }

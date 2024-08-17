@@ -5,8 +5,8 @@ function scr_movement(){
 	if (keyboard_check(vk_right)){ 
 		x += spd;
 		if (!face_right){
-			sprite_index = spr_cat;
-			if (damage) sprite_index = spr_cat_damage;
+			sprite_index = spr_jelly;
+			if (damage) sprite_index = spr_jelly;
 			face_right = true;
 			}
 		}
@@ -15,8 +15,8 @@ function scr_movement(){
 		if (keyboard_check(vk_left)){
 			x -= spd;
 			if(face_right){
-				sprite_index = spr_cat_flip;
-				if (damage) sprite_index = spr_cat_damage_flip;
+				sprite_index = spr_jelly_flip;
+				if (damage) sprite_index = spr_jelly_flip;
 				face_right = false;
 			}
 		}
