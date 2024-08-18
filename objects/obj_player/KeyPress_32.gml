@@ -3,7 +3,7 @@
 
 if(skill_pause = false && !damage){
 	audio_play_sound(skill_pause_snd[skill_pause_counter], 1, false);
-	ring = instance_create_layer(x, y, "Inst_upper", obj_player_ring);
+	var ring = instance_create_layer(x, y, "Inst_upper", obj_player_ring);
 	with(ring){
 		image_xscale = other.image_xscale;
 		image_yscale = other.image_yscale;
