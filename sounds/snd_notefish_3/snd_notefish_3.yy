@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.900045,
+  "duration":1.353401,
   "name":"snd_notefish_3",
   "parent":{
     "name":"Temple",
@@ -20,6 +20,6 @@
   "resourceVersion":"2.0",
   "sampleRate":44100,
   "soundFile":"snd_notefish_3.wav",
-  "type":0,
+  "type":1,
   "volume":1.0,
 }

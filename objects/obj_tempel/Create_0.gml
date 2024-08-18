@@ -1,52 +1,45 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+button_create = false;
+button_destroy = false;
+played = false;
+eights = global.beat_max / 8;
+eight_count = 0;
+
+button_1 = instance_create_layer(x - 1200, y + 480, "Inst_lowest", obj_temple_button_1);
+with(button_1){
+	temple = other;
+};
+button_2 = instance_create_layer(x - 850, y + 480, "Inst_lowest", obj_temple_button_2);
+with(button_2){
+	temple = other;
+};
+
 x_step_size = 128;
-y_step_size = 168;
+y_step_size = 160;
 
-fish_1 = instance_create_layer(x , y , "Inst_lower", obj_notefish);
-with(fish_1){
-	image_blend = c_blue;
-	base_x = other.x - 750;
-	base_y = other.y + 190;
+fishes = [];
+free_positions_x = [[1,1], [1,2], [1,3], [1,4], [1,5], [2,1], [2,2], [2,3], [2,4], [2,5], [3,1], [3,2], [3,3], [3,4], [3,5], [4,1], [4,2], [4,3], [4,4], [4,5], [5,1], [5,2], [5,3], [5,4], [5,5], [6,1], [6,2], [6,3], [6,4], [6,5], [7,1], [7,2], [7,3], [7,4], [7,5], [8,1], [8,2], [8,3], [8,4], [8,5]];
+
+for (var i = 0; i < 3; i += 1){
+	var index_x = irandom(array_length(free_positions_x)-1);
+	var rand_x = free_positions_x[index_x];
+	array_delete(free_positions_x, index_x, 1);
+
+    fishes[i] = instance_create_layer(x , y , "Inst_lower", obj_notefish);
+with(fishes[i]){
+	temple = other;
+	base_x = other.x - 700;
+	base_y = other.y + 380;
 	x_step_size = other.x_step_size;
 	y_step_size = other.y_step_size;
-	grid_pos_x = 1;
-	grid_pos_y = 1;
+	grid_pos_x = rand_x[0];
+	grid_pos_y = rand_x[1];
 	x = base_x + grid_pos_x * x_step_size;
 	anchorY = base_y - grid_pos_y * y_step_size;
 	frequency = 0.1;
 	amplitude = 10;
 	timer = 0;
-}
-
-fish_2 = instance_create_layer(x - 512, y , "Inst_lower", obj_notefish);
-with(fish_2){
-	image_blend = c_yellow;
-	base_x = other.x - 750;
-	base_y = other.y + 190;
-	x_step_size = other.x_step_size;
-	y_step_size = other.y_step_size;
-	grid_pos_x = 4;
-	grid_pos_y = 3;
-	x = base_x + grid_pos_x * x_step_size;
-	anchorY = base_y - grid_pos_y * y_step_size;
-	frequency = 0.1;
-	amplitude = 10;
-	timer = 0;
-}
-
-fish_3 = instance_create_layer(x - 512, y , "Inst_lower", obj_notefish);
-with(fish_3){
-	base_x = other.x - 750;
-	base_y = other.y + 190;
-	x_step_size = other.x_step_size;
-	y_step_size = other.y_step_size;
-	grid_pos_x = 7;
-	grid_pos_y = 2;
-	x = base_x + grid_pos_x * x_step_size;
-	anchorY = base_y - grid_pos_y * y_step_size;
-	frequency = 0.1;
-	amplitude = 10;
-	timer = 0;
+	}
 }

@@ -4,13 +4,14 @@ function scr_harden(){
 if(keyboard_check_pressed(ord("O"))){
 	if(!skill_harden_active){
 	harden_animation = instance_create_layer(x, y, "Inst_upper", obj_jelly_steel);
-	image_blend = c_purple;
-	alarm[2] = skill_harden_cooldown;
+	image_blend = c_silver;
+	alarm[1] = skill_harden_cooldown;
+	alarm[2] = skill_harden_duration;
 	skill_harden_active = true;
 		}
 	}
 
-if(skill_harden_active){
+if(skill_harden_active or skill_harden_ani){
 	if(instance_exists(harden_animation)){
 	if (face_right) harden_animation.sprite_index = spr_jelly_steel;	
 	if (!face_right) harden_animation.sprite_index = spr_jelly_steel_flip;	

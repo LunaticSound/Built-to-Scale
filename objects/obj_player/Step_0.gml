@@ -6,5 +6,5 @@ scr_grow_and_freeze();
 scr_dash();
 scr_harden();
 scr_lose_life();
+scr_next_lvl();
 
-if(x > 8500 && global.beat_count == global.beat_max - 1) room_goto_next();

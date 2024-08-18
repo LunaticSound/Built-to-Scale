@@ -7,3 +7,4 @@ global.beat_max = 216;
 global.beat_count = 215;
 
 window_set_fullscreen(true);
+audio_channel_num(200);
