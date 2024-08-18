@@ -4,7 +4,39 @@
 quarters = global.beat_max/4;
 halves = global.beat_max/2;
 
+// values for changing
+
+life = 5;
 spd = 6;
+x_size = 0.65;
+y_size = 0.65;
+grow_size = 0.01;
+
+// init
+
+grow = true;
+damage = false;
+clap = false;
+image_xscale = x_size;
+image_yscale = y_size;
+previous_x = x;
+previous_y = y;
+face_right = true;
+loop_switch = false;
+bar = 2;
+
+// freeze setup
+
+skill_pause = false;
+skill_pause_counter = 0;
+skill_pause_snd = [snd_skill_pause, snd_skill_pause_1, snd_skill_pause_2];
+
+// harden setup
+
+skill_harden_cooldown = 120;
+skill_harden_active = false;
+
+// dash setup
 dash = false;
 dash_count = 0;
 dash_charging = false;
@@ -12,29 +44,11 @@ dash_act = false;
 dash_max = global.beat_max/2 + 2;
 dash_velo = 0;
 
-damage = false;
-skill_pause = false;
-skill_pause_counter = 0;
-x_size = 0.65;
-y_size = 0.65;
-grow = true;
-grow_size = 0.01;
-clap = false;
-image_xscale = x_size;
-image_yscale = y_size;
-previous_x = x;
-previous_y = y;
 
-face_right = true;
 
 damage_sprite_r = spr_jelly;
 damage_sprite_l = spr_jelly_flip;
 
-skill_pause_snd = [snd_skill_pause, snd_skill_pause_1, snd_skill_pause_2];
-loop_switch = false;
-bar = 2;
-
-life = 5;
 heart_1 = instance_create_layer(64, 64, "Inst_upper", obj_heart);
 heart_2 = instance_create_layer(128, 64, "Inst_upper", obj_heart);
 heart_3 = instance_create_layer(192, 64, "Inst_upper", obj_heart);

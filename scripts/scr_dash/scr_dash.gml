@@ -1,6 +1,16 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_dash(){
+if(keyboard_check_pressed(ord("K"))){
+	if(!dash_act){ 
+	dash = true;
+	dash_charge_sound = audio_play_sound(snd_dash_charge, 1, false);
+	}
+}
+
+if(keyboard_check_released(ord("K"))) dash = false;
+
+
 if (dash){
 	dash_count += 1;	
 	dash_charging = true;
