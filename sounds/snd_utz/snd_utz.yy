@@ -12,8 +12,8 @@
   "duration":0.310227,
   "name":"snd_utz",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"Beat",
+    "path":"folders/Sounds/Beat.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

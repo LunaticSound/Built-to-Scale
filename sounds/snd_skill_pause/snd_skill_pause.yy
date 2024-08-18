@@ -12,8 +12,8 @@
   "duration":1.35034,
   "name":"snd_skill_pause",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"Skills",
+    "path":"folders/Sounds/Skills.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

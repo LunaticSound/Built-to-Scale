@@ -12,8 +12,8 @@
   "duration":1.0,
   "name":"snd_skill",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"Skills",
+    "path":"folders/Sounds/Skills.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

@@ -31,3 +31,5 @@ switch (life)
 		game_restart();
     break;
 }
+
+show_debug_message(string(image_xscale))

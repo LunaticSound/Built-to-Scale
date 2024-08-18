@@ -14,9 +14,6 @@ function scr_cat_scale(){
 			image_yscale -= grow_size;
 //			image_xscale = 0.5 - global.beat_count / global.beat_max * 0.5  + 0.25
 //			image_yscale = 0.5 - global.beat_count / global.beat_max * 0.5  + 0.25
-
-		
-		
 		}
 	}
 	if(global.beat_count%quarters == 0){
@@ -31,8 +28,15 @@ function scr_cat_scale(){
 		clap = !clap;
 		damage = false;
 	}
-	if(global.beat_count%halves == 0){
-		audio_play_sound(snd_loop, 1, false);
+	if(global.beat_count == 0){
+		if (!loop_switch){
+			audio_play_sound(snd_loop_1, 1, false);
+			loop_switch = true;
+		}
+		else if (loop_switch){
+			audio_play_sound(snd_loop_2, 1, false);
+			loop_switch = false;
+		}
 	}
 
 }

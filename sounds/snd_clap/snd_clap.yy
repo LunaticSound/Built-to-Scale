@@ -12,8 +12,8 @@
   "duration":0.592109,
   "name":"snd_clap",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"Beat",
+    "path":"folders/Sounds/Beat.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

@@ -12,8 +12,8 @@
   "duration":3.600907,
   "name":"snd_loop",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"Beat",
+    "path":"folders/Sounds/Beat.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"snd_loop.wav",
   "type":0,
-  "volume":1.0,
+  "volume":0.0,
 }

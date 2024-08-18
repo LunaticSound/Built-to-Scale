@@ -1,18 +1,65 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+dist = abs(camera_get_view_x(view_camera[0]) - x);
+	if(dist < 2020){
+
 if(global.beat_count%eights == 0){
 	eight_count += 1;
 }
 
 if(eight_count == 3){
-	instance_create_layer(x - 248, y - 395, "Inst", obj_steam)
+	if(!played_first){
+	instance_create_layer(x - 152, y - 385, "Inst", obj_steam)
+	audio_play_sound(snd_steam_horn_1, 1, false, dist/600);
+	played_first = true;
+	}
 }
 
 if(eight_count == 7){
-	instance_create_layer(x - 275, y + 30, "Inst", obj_steam)
+	if(!played_second){
+	instance_create_layer(x - 172, y + 50, "Inst", obj_steam)
+	audio_play_sound(snd_steam_horn_2, 1, false, dist/600);
+	played_second = true;
+	}
 }
 
-if(eight_count == 8){
+if(eight_count == 13){
+	if(!played_third){
+	instance_create_layer(x - 152, y - 385, "Inst", obj_steam)
+	audio_play_sound(snd_steam_horn_3, 1, false, dist/600);
+	played_third = true;
+	}
+}
+
+if(eight_count == 15){
+	if(!played_fourth){
+	instance_create_layer(x - 172, y + 50, "Inst", obj_steam)
+	audio_play_sound(snd_steam_horn_4, 1, false, dist/600);
+	played_fourth = true;
+	}
+}
+
+if(eight_count == 16){
+	played_first = false;
+	played_second = false;
+	played_third = false;
+	played_fourth = false;
 	eight_count = 0;
+}
+}
+
+if(buttons_pressed == 2){
+	y += 3;
+	button_1.y += 3;
+	button_2.y += 3;
+	if(y > 1500){
+	with(button_1){
+		instance_destroy();
+	}	
+	with(button_2){
+		instance_destroy();
+	}
+	instance_destroy();
+	}
 }

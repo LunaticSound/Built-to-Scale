@@ -15,8 +15,8 @@ dash_velo = 0;
 damage = false;
 skill_pause = false;
 skill_pause_counter = 0;
-x_size = 0.25;
-y_size = 0.25;
+x_size = 0.65;
+y_size = 0.65;
 grow = true;
 grow_size = 0.01;
 clap = false;
@@ -31,6 +31,8 @@ damage_sprite_r = spr_jelly;
 damage_sprite_l = spr_jelly_flip;
 
 skill_pause_snd = [snd_skill_pause, snd_skill_pause_1, snd_skill_pause_2];
+loop_switch = false;
+bar = 2;
 
 life = 5;
 heart_1 = instance_create_layer(64, 64, "Inst_upper", obj_heart);

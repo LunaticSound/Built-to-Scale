@@ -12,8 +12,8 @@
   "duration":2.925737,
   "name":"snd_dash_charge",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"Skills",
+    "path":"folders/Sounds/Skills.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

@@ -12,8 +12,8 @@
   "duration":0.642857,
   "name":"snd_spikes",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"Enemies",
+    "path":"folders/Sounds/Enemies.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
