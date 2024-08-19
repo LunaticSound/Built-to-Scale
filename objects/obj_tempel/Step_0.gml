@@ -20,15 +20,36 @@ with(fishes[array_length(fishes) - 1]){
 	frequency = 0.1;
 	amplitude = 10;
 	timer = 0;
+	correct_notes = other.correct_notes;
+		var notes = 0;
+	for (var j = 0; j < array_length(correct_notes) - 1; j += 1){
+		if(grid_pos_x == correct_notes[j][0] && grid_pos_y == correct_notes[j][1]) notes += 1;	
+	}
+	if(notes == 1){ 
+		temple.notes_correct += 1
+	} else {
+		temple.notes_correct -= 1;
 		}
 	}
+}
 	button_create = false;
 }
 
 if(button_destroy){
 	if(array_length(fishes) > 0){
 		var fish = irandom(array_length(fishes) - 1);
-		with(fishes[fish]){ instance_destroy();}
+		with(fishes[fish]){ 
+			instance_destroy();
+			var note = 0;
+	for (var k = 0; k < array_length(correct_notes) - 1; k += 1){
+		if(grid_pos_x == correct_notes[k][0] && grid_pos_y == correct_notes[k][1]) note += 1;	
+	}
+	if(note == 1){ 
+		temple.notes_correct -= 1
+	} else {
+		temple.notes_correct += 1;
+		}
+			}
 		array_delete(fishes, fish, 1);
 	}
 	button_destroy = false;
@@ -40,5 +61,15 @@ if(global.beat_count%eights == 0){
 	for (var i = 0; i < ii; i += 1){
 	fishes[i].played = false;
 	}
-	if(eight_count > 8) eight_count = 0;
+	if(eight_count == 8) eight_count = 0;
+}
+
+if(notes_correct == notes_needed){
+	y += 200;
+	if(y > 2800){
+		for (var i = 0; i < array_length(fishes) - 1; i += 1){
+		with(fishes[i]) instance_destroy();	
+		}
+		instance_destroy();
+	}
 }

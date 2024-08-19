@@ -33,10 +33,11 @@ skill_pause_snd = [snd_skill_pause, snd_skill_pause_1, snd_skill_pause_2];
 
 // harden setup
 
-skill_harden_duration = 120;
-skill_harden_cooldown = 280;
+skill_harden_duration = global.beat_max / 2;
+skill_harden_cooldown = global.beat_max * 2;
 skill_harden_active = false;
 skill_harden_ani = false;
+skill_harden_cool = true;
 
 // dash setup
 dash = false;

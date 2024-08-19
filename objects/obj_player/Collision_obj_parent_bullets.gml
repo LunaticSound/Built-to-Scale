@@ -12,6 +12,7 @@ with(other){
 	image_yscale = 0.12;
 	if (face_right) sprite_index = damage_sprite_r;
 	if (!face_right) sprite_index = damage_sprite_l;
+	audio_play_sound(choose(snd_player_damage, snd_player_damage_2, snd_player_damage_3, snd_player_damage_4), 1, false);
 	life -= 1;
 }
 

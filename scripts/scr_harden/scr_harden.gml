@@ -2,12 +2,14 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_harden(){
 if(keyboard_check_pressed(ord("O"))){
-	if(!skill_harden_active){
+	if(!skill_harden_active && skill_harden_cool){
+	audio_play_sound(snd_skill_harden, 1, false);
 	harden_animation = instance_create_layer(x, y, "Inst_upper", obj_jelly_steel);
 	image_blend = c_silver;
 	alarm[1] = skill_harden_cooldown;
 	alarm[2] = skill_harden_duration;
 	skill_harden_active = true;
+	skill_harden_cool = false;
 		}
 	}
 

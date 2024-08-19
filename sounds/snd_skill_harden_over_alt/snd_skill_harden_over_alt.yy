@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_skill_harden_over_alt",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":1.800454,
+  "name":"snd_skill_harden_over_alt",
+  "parent":{
+    "name":"Skills",
+    "path":"folders/Sounds/Skills.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_skill_harden_over_alt.wav",
+  "type":0,
+  "volume":1.0,
+}

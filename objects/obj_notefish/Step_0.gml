@@ -17,3 +17,4 @@ if(temple.eight_count == grid_pos_x){
 if(sprite_index = spr_notefish_turn){
 	if(image_index >= image_number - 1) sprite_index = spr_notefish;
 }
+

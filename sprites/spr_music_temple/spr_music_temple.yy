@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Backgrounds",
-    "path":"folders/Sprites/Backgrounds.yy",
+    "name":"Temples",
+    "path":"folders/Sprites/Temples.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
