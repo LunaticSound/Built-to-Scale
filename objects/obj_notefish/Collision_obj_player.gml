@@ -2,6 +2,7 @@
 // You can write your code in this editor
 
 
+if(!temple_clear){
 if(other.skill_harden_active){
     var was_correct = false;
     for (var i = 0; i < array_length(correct_notes); i += 1) {
@@ -61,7 +62,7 @@ if(other.skill_harden_active){
         temple.notes_correct += 2;
     }
 }
-
+}
 /*
 if(other.skill_harden_active){
 	if(abs(x - other.x) > abs(y - other.y)){

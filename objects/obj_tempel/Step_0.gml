@@ -1,13 +1,14 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if(button_create){
+if(button_create && notes_correct != notes_needed){
 	if(array_length(fishes) < 40){
 	var index_x = irandom(array_length(free_positions_x)-1);
 	var rand_x = free_positions_x[index_x];
 	array_delete(free_positions_x, index_x, 1);
 	fishes[array_length(fishes)] = instance_create_layer(x , y , "Inst_lower", obj_notefish);
 with(fishes[array_length(fishes) - 1]){
+	temple_clear = false;
 	temple = other;
 	base_x = other.x - 700;
 	base_y = other.y + 380;
@@ -35,7 +36,7 @@ with(fishes[array_length(fishes) - 1]){
 	button_create = false;
 }
 
-if(button_destroy){
+if(button_destroy && notes_correct != notes_needed){
 	if(array_length(fishes) > 0){
 		var fish = irandom(array_length(fishes) - 1);
 		with(fishes[fish]){ 
@@ -55,21 +56,24 @@ if(button_destroy){
 	button_destroy = false;
 }
 
+
 if(global.beat_count%eights == 0){
 	eight_count +=1;
+	if(notes_correct != notes_needed){
 	var ii = array_length(fishes);
 	for (var i = 0; i < ii; i += 1){
 	fishes[i].played = false;
-	}
-	if(eight_count == 8) eight_count = 0;
+	}}
+	if(eight_count == 9) eight_count = 1;
 }
 
 if(notes_correct == notes_needed){
-	y += 200;
-	if(y > 2800){
-		for (var i = 0; i < array_length(fishes) - 1; i += 1){
-		with(fishes[i]) instance_destroy();	
+	for (var i = 0; i < array_length(fishes); i += 1){
+		with(fishes[i]) temple_clear = true;;	
 		}
+	
+	y += 4;
+	if(y > 2800){
 		instance_destroy();
 	}
 }

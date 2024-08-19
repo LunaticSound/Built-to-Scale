@@ -8,17 +8,22 @@ halves = global.beat_max/2;
 
 life = 5;
 spd = 6;
-x_size = 0.65;
-y_size = 0.65;
+size = 0.12;
+// y_size = 0.12;
+max_size = 0.65;
+// max_y_size = 0.65;
 grow_size = 0.01;
+damage_cooldown = 0;
 
 // init
 
-grow = true;
+grow = false;
 damage = false;
 clap = false;
-image_xscale = x_size;
-image_yscale = y_size;
+image_xscale = size;
+image_yscale = size;
+x_size_factor = image_xscale;
+y_size_factor = image_yscale;
 previous_x = x;
 previous_y = y;
 face_right = true;

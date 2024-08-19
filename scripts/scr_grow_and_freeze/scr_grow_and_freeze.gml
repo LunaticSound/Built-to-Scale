@@ -1,5 +1,7 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+
+
 function scr_grow_and_freeze(){
 	if(keyboard_check_pressed(vk_space)){
 	if(skill_pause = false && !damage){
@@ -16,33 +18,59 @@ function scr_grow_and_freeze(){
 	alarm[0] = global.beat_max/2;
 	}
 }
-	
-	if(!skill_pause && !damage){
-		if(grow){
-			image_xscale += grow_size;
-			image_yscale += grow_size;
-//			image_xscale = global.beat_count / global.beat_max * 0.5  + 0.25
-//			image_yscale = global.beat_count / global.beat_max * 0.5  + 0.25
 
+if(!skill_pause){
+if(grow){
+	image_xscale = lerp(image_xscale, max_size, grow_size)
+	image_yscale = lerp(image_yscale, max_size, grow_size)
+}
+
+if(!grow){
+	image_xscale = lerp(image_xscale, size, grow_size)
+	image_yscale = lerp(image_yscale, size, grow_size)
+}
+}
+
+
+/*
+if(!skill_pause){	
+if(grow){
+	x_size_factor += grow_size;
+	y_size_factor += grow_size;
+	image_xscale += grow_size;
+	image_yscale += grow_size;
+}
+
+if(!grow){
+	x_size_factor -= grow_size;
+	y_size_factor -= grow_size;
+	image_xscale -= grow_size;
+	image_yscale -= grow_size;
 		}
-		if(!grow){
-			image_xscale -= grow_size;
-			image_yscale -= grow_size;
-//			image_xscale = 0.5 - global.beat_count / global.beat_max * 0.5  + 0.25
-//			image_yscale = 0.5 - global.beat_count / global.beat_max * 0.5  + 0.25
+}
+*/
+
+if(!skill_pause && !damage){
+			//image_xscale = x_size_factor;
+			//image_yscale = y_size_factor;
 		}
-	}
+		
+		
+	
 	if(global.beat_count%quarters == 0){
 		if(!clap){ 
 			audio_play_sound(snd_utz, 1, false);
+//			if(!skill_pause){
+//				image_xscale = size;
+//				image_yscale = size;
+//			}
 		}
 		if(clap){ 
 			audio_play_sound(snd_clap, 1, false);
 		}
-		if (damage) grow = false;
-		grow = !grow;	
+		grow = !grow;
 		clap = !clap;
-		damage = false;
+//		damage = false;
 	}
 	if(global.beat_count == 0){
 		if (!loop_switch){
