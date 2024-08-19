@@ -1,6 +1,7 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_movement(){
+	if(!dead){
 		if (x < room_width - 64){
 	if (keyboard_check(vk_right) or keyboard_check(ord("D"))){ 
 		x += spd;
@@ -29,5 +30,5 @@ function scr_movement(){
 		if (keyboard_check(vk_up) or keyboard_check(ord("W"))){
 			y -= spd;
 		}}
-	
+	}
 }

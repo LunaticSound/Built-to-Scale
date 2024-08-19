@@ -6,8 +6,8 @@
   "name":"obj_rock_1",
   "overriddenProperties":[],
   "parent":{
-    "name":"Walls",
-    "path":"folders/Objects/Walls.yy",
+    "name":"Rocks Corals",
+    "path":"folders/Objects/Walls/Rocks Corals.yy",
   },
   "parentObjectId":{
     "name":"obj_parent_wall",

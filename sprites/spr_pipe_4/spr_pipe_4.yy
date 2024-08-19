@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Walls",
-    "path":"folders/Sprites/Walls.yy",
+    "name":"Pipes Garbage",
+    "path":"folders/Sprites/Walls/Pipes Garbage.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

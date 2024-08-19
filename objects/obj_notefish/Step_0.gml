@@ -10,7 +10,8 @@ if(temple.eight_count == grid_pos_x){
 	image_index = 0;
 	if(temple_clear) effect_create_above(ef_spark, x, y, 2, c_yellow);
 	sounds = [choose(snd_notefish_1, snd_notefish_1_alt), choose(snd_notefish_2, snd_notefish_2_alt), choose(snd_notefish_3, snd_notefish_3_alt), choose(snd_notefish_4, snd_notefish_4_alt), choose(snd_notefish_5, snd_notefish_5_alt)];
-	audio_play_sound(sounds[grid_pos_y-1], 1, false);	
+//	audio_play_sound(sounds[grid_pos_y-1], 1, false, );	
+	audio_play_sound_dist(sounds[grid_pos_y-1], x, 2200, 1);
 	if(temple_clear) instance_destroy();
 	played = true;
 	}

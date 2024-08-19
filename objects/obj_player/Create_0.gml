@@ -12,7 +12,7 @@ size = 0.12;
 // y_size = 0.12;
 max_size = 0.65;
 // max_y_size = 0.65;
-grow_size = 0.01;
+grow_size = 0.03;
 damage_cooldown = 0;
 
 // init
@@ -29,6 +29,7 @@ previous_y = y;
 face_right = true;
 loop_switch = false;
 bar = 2;
+dead = false;
 
 // freeze setup
 

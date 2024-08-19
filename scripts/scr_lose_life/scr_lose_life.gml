@@ -24,7 +24,8 @@ switch (life)
 	
 	    case 0:
         with(heart_1) instance_destroy();
-		game_restart();
+		image_blend = c_black;
+		dead = true;
     break;
 }
 }

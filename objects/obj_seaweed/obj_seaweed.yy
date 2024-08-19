@@ -6,8 +6,8 @@
   "name":"obj_seaweed",
   "overriddenProperties":[],
   "parent":{
-    "name":"Walls",
-    "path":"folders/Objects/Walls.yy",
+    "name":"Rocks Corals",
+    "path":"folders/Objects/Walls/Rocks Corals.yy",
   },
   "parentObjectId":null,
   "persistent":false,

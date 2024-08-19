@@ -6,8 +6,8 @@
   "name":"obj_pipe_hori",
   "overriddenProperties":[],
   "parent":{
-    "name":"Walls",
-    "path":"folders/Objects/Walls.yy",
+    "name":"Junk",
+    "path":"folders/Objects/Walls/Junk.yy",
   },
   "parentObjectId":null,
   "persistent":false,

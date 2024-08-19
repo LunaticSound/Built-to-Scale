@@ -5,7 +5,7 @@ if (round(image_index) == 8 && !shot_happened){
 	var dist = abs(camera_get_view_x(view_camera[0]) - x);
 	if(dist < 2020){
 	var shot = instance_create_layer(x, y - 45, "Inst_upper", obj_bullet_gear);
-	audio_play_sound(snd_spikes, 1, false, dist/600);
+	audio_play_sound_dist(snd_spikes, x, false, 1);
 	shot_happened = true;
 	alarm[0] = 10;
 	with(shot){
