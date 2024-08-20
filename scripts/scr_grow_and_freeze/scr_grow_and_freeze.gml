@@ -19,7 +19,7 @@ function scr_grow_and_freeze(){
 	}
 }
 
-if(!skill_pause && !damage){
+if(!skill_pause && !damage && !hard_hit){
 	if(grow){
 		image_xscale = lerp(image_xscale, max_size, grow_size)
 		image_yscale = lerp(image_yscale, max_size, grow_size)
@@ -31,15 +31,10 @@ if(!skill_pause && !damage){
 	}
 }
 
-if(damage){
+if(damage or hard_hit){
 	image_xscale = lerp(image_xscale, size, grow_size)
 	image_yscale = lerp(image_yscale, size, grow_size)
 	}	
-	
-// if(damage){
-//	image_xscale = lerp(image_xscale, size, grow_size)
-//	image_yscale = lerp(image_yscale, size, grow_size)
-//	}
 	
 	if(global.beat_count%quarters == 0){
 		if(!clap){ 

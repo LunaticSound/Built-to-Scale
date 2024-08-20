@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-door = instance_create_layer(x + 534, y - 200, "Inst", obj_door);
+door = instance_create_layer(x + 650, y - 200, "Inst", obj_door);
 
 with (door){ open = false;}
 

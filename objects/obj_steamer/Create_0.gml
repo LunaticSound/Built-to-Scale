@@ -8,14 +8,15 @@ played_first = false;
 played_second = false;
 played_third = false;
 played_fourth = false;
+go_down = false;
 
 buttons_pressed = 0;
 
-button_1 = instance_create_layer(x+40, y - 180, "Inst_lowest", obj_steam_button);
+button_1 = instance_create_layer(x+50, y - 180, "Inst_lowest", obj_steam_button);
 with(button_1){
 	steamer = other;
 };
-button_2 = instance_create_layer(x+40, y + 180, "Inst_lowest", obj_steam_button);
+button_2 = instance_create_layer(x+50, y + 180, "Inst_lowest", obj_steam_button);
 with(button_2){
 	steamer = other;
 };

@@ -13,7 +13,9 @@ if(!skill_harden_active){
 }
 
 if(skill_harden_active){
-	harden_animation = instance_create_layer(x, y, "Inst_upper", obj_jelly_steel)	
+	harden_animation = instance_create_layer(x, y, "Inst_upper", obj_jelly_steel)
+	hard_hit = true;
+	alarm[4] = 30;
 }
 
 x = previous_x;

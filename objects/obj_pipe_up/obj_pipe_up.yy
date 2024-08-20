@@ -8,8 +8,8 @@
   "name":"obj_pipe_up",
   "overriddenProperties":[],
   "parent":{
-    "name":"Junk",
-    "path":"folders/Objects/Walls/Junk.yy",
+    "name":"Rocks Corals",
+    "path":"folders/Objects/Walls/Rocks Corals.yy",
   },
   "parentObjectId":{
     "name":"obj_parent_wall",

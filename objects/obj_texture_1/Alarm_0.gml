@@ -2,4 +2,4 @@
 // You can write your code in this editor
 
 toggle = !toggle;
-alarm[0] = 90;
+alarm[0] = global.beat_max / 2;

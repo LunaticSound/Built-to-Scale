@@ -16,9 +16,13 @@ if(!skill_harden_active){
 
 if(skill_harden_active){
 	harden_animation = instance_create_layer(x, y, "Inst_upper", obj_jelly_steel);
+	hard_hit = true;
+	alarm[4] = 30;
 	harden_animation.image_xscale = image_xscale;
 	harden_animation.image_yscale = image_yscale;
 	harden_animation.x = x;
 	harden_animation.y = y;
-	other.direction = -other.direction;
+	other.direction -= 180;
+	other.shot_duration += 30;
+	other.shot_back = true;
 }

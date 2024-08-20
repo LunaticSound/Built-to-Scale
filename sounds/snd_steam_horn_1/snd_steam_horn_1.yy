@@ -12,8 +12,8 @@
   "duration":3.150794,
   "name":"snd_steam_horn_1",
   "parent":{
-    "name":"Enemies",
-    "path":"folders/Sounds/Enemies.yy",
+    "name":"Steamer",
+    "path":"folders/Sounds/Enemies/Steamer.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

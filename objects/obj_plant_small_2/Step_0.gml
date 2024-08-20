@@ -13,6 +13,7 @@ if (round(image_index) == 8 && !shot_happened){
 	speed = other.shot_speed;
 	image_xscale = other.shot_size;
 	image_yscale = other.shot_size;
+	shot_duration = other.shot_duration;
 		}
 	}
 }

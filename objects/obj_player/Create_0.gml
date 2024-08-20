@@ -9,9 +9,7 @@ halves = global.beat_max/2;
 life = 5;
 spd = 6;
 size = 0.12;
-// y_size = 0.12;
 max_size = 0.65;
-// max_y_size = 0.65;
 grow_size = 0.03;
 damage_cooldown = 0;
 
@@ -19,6 +17,7 @@ damage_cooldown = 0;
 
 grow = false;
 damage = false;
+hard_hit = false;
 clap = false;
 image_xscale = size;
 image_yscale = size;
@@ -40,7 +39,7 @@ skill_pause_snd = [snd_skill_pause, snd_skill_pause_1, snd_skill_pause_2];
 // harden setup
 
 skill_harden_duration = global.beat_max / 2;
-skill_harden_cooldown = global.beat_max * 2;
+skill_harden_cooldown = global.beat_max;
 skill_harden_active = false;
 skill_harden_ani = false;
 skill_harden_cool = true;

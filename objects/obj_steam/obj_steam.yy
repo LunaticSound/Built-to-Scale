@@ -11,7 +11,10 @@
     "name":"Bullets",
     "path":"folders/Objects/Enemies/Bullets.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_parent_pierce",
+    "path":"objects/obj_parent_pierce/obj_parent_pierce.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

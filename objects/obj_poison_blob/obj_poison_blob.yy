@@ -13,8 +13,8 @@
     "path":"folders/Objects/Enemies.yy",
   },
   "parentObjectId":{
-    "name":"obj_parent_wall",
-    "path":"objects/obj_parent_wall/obj_parent_wall.yy",
+    "name":"obj_parent_pierce",
+    "path":"objects/obj_parent_pierce/obj_parent_pierce.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
