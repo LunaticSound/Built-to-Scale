@@ -10,8 +10,8 @@
   "name":"obj_texture_2",
   "overriddenProperties":[],
   "parent":{
-    "name":"Textures",
-    "path":"folders/Objects/Walls/Textures.yy",
+    "name":"Rocks Corals",
+    "path":"folders/Objects/Walls/Rocks Corals.yy",
   },
   "parentObjectId":{
     "name":"obj_parent_wall",

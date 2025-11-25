@@ -14,8 +14,8 @@
     "path":"folders/Objects/Enemies/Der Tempel.yy",
   },
   "parentObjectId":{
-    "name":"obj_parent_wall",
-    "path":"objects/obj_parent_wall/obj_parent_wall.yy",
+    "name":"obj_parent_fish",
+    "path":"objects/obj_parent_fish/obj_parent_fish.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

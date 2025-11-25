@@ -10,7 +10,7 @@ if(global.beat_count%eights == 0){
 
 if(eight_count == 3){
 	if(!played_first){
-	instance_create_layer(x - 146, y - 380, "Inst_upper", obj_steam)
+	steam_1 = instance_create_layer(x - 146, y - 380, "Inst_upper", obj_steam)
 	audio_play_sound(snd_steam_horn_1, 1, false, dist/600);
 	played_first = true;
 	}
@@ -18,7 +18,7 @@ if(eight_count == 3){
 
 if(eight_count == 7){
 	if(!played_second){
-	instance_create_layer(x - 172, y + 50, "Inst_upper", obj_steam)
+	steam_2 = instance_create_layer(x - 172, y + 50, "Inst_upper", obj_steam)
 	audio_play_sound(snd_steam_horn_2, 1, false, dist/600);
 	played_second = true;
 	}
@@ -26,7 +26,7 @@ if(eight_count == 7){
 
 if(eight_count == 13){
 	if(!played_third){
-	instance_create_layer(x - 146, y - 380, "Inst_upper", obj_steam)
+	steam_3 = instance_create_layer(x - 146, y - 380, "Inst_upper", obj_steam)
 	audio_play_sound(snd_steam_horn_3, 1, false, dist/600);
 	played_third = true;
 	}
@@ -34,7 +34,7 @@ if(eight_count == 13){
 
 if(eight_count == 15){
 	if(!played_fourth){
-	instance_create_layer(x - 172, y + 50, "Inst_upper", obj_steam)
+	steam_4 = instance_create_layer(x - 172, y + 50, "Inst_upper", obj_steam)
 	audio_play_sound(snd_steam_horn_4, 1, false, dist/600);
 	played_fourth = true;
 	}
@@ -57,6 +57,10 @@ if(buttons_pressed == 2){
 
 if(go_down){
 	y += 2;
+	if(instance_exists(steam_1)) steam_1.y += 2;
+	if(instance_exists(steam_2)) steam_2.y += 2;
+	if(instance_exists(steam_3)) steam_3.y += 2;
+	if(instance_exists(steam_4)) steam_4.y += 2;
 	button_1.y += 3;
 	button_2.y += 3;
 	if(y > 1500){

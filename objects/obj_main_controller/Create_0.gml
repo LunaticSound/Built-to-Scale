@@ -5,6 +5,7 @@ game_set_speed(60, fps);
 
 global.beat_max = 216;
 global.beat_count = 215;
+global.bars = 0;
 
 window_set_fullscreen(true);
 audio_channel_num(200);

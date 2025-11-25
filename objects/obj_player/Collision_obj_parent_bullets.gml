@@ -22,6 +22,11 @@ if(skill_harden_active){
 	harden_animation.image_yscale = image_yscale;
 	harden_animation.x = x;
 	harden_animation.y = y;
+	image_xscale -= 0.1;
+	image_yscale -= 0.1;
+	x = previous_x;
+	y=previous_y;
+	audio_play_sound(snd_spikes, 1, false);
 	other.direction -= 180;
 	other.shot_duration += 30;
 	other.shot_back = true;

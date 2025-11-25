@@ -1,7 +1,8 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_next_lvl(){
-if(x > 8500 && global.beat_count == global.beat_max - 1){ 
+if(x > 8550) nxt_lvl = true; 
+if(nxt_lvl && global.beat_count == global.beat_max - 1){ 
 	
 	switch (life)
 {
@@ -19,7 +20,7 @@ if(x > 8500 && global.beat_count == global.beat_max - 1){
 }
 
 life = 5;
-
+	nxt_lvl = false;
 	room_goto_next();
 }
 

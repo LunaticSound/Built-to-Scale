@@ -2,7 +2,13 @@
 // You can write your code in this editor
 
 global.beat_count += 1;
-if(global.beat_count = global.beat_max) global.beat_count = 0;
+if(global.beat_count == global.beat_max) global.beat_count = 0;
+
+
+if(global.beat_count == 0){ 
+	global.bars += 1;
+	if(global.bars == 2) global.bars = 0;
+}
 
 /*
 var buffer = 100; // Extend the activation region slightly beyond the view

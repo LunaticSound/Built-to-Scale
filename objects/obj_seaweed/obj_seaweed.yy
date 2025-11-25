@@ -9,7 +9,10 @@
     "name":"Rocks Corals",
     "path":"folders/Objects/Walls/Rocks Corals.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_parent_wall",
+    "path":"objects/obj_parent_wall/obj_parent_wall.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

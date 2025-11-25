@@ -1,0 +1,1 @@
+turn_speed = 0;

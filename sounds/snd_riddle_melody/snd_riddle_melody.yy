@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":4.501134,
+  "duration":7.201814,
   "name":"snd_riddle_melody",
   "parent":{
     "name":"Temple",

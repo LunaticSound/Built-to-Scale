@@ -2,3 +2,4 @@
 // You can write your code in this editor
 
 skill_pause = false;
+alarm[5] = global.beat_max / 8;

@@ -3,7 +3,11 @@
 function scr_lose_life(){
 switch (life)
 {
-    case 5:
+    case 6:
+    break;
+	
+	case 5:
+        with(heart_6) instance_destroy();
     break;
 
     case 4:

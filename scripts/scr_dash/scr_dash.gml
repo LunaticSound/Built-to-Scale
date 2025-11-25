@@ -1,18 +1,33 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_dash(){
+if(room != rm_start && global.tut_dash_switch){
 if(keyboard_check_pressed(ord("K"))){
-	if(!dash_act){ 
+	if(!dash_act){
 	dash = true;
 	dash_charge_sound = audio_play_sound(snd_dash_charge, 1, false);
 	}
 }
 
+if(array_length(gamepads) > 0){
+	if(gamepad_button_check_pressed(gamepads[0], gp_face3)){
+				if(!dash_act){
+	dash = true;
+	dash_charge_sound = audio_play_sound(snd_dash_charge, 1, false);
+	}	
+	}
+	
+}
+
 if(keyboard_check_released(ord("K"))) dash = false;
+if(array_length(gamepads) > 0){
+	if (gamepad_button_check_released(gamepads[0], gp_face3)) dash = false;	
+	}
 
 
 if (dash){
-	dash_count += 1;	
+	dash_count += 1;
+	image_blend = merge_colour(image_blend, c_fuchsia, 0.005);
 	dash_charging = true;
 	}
 if(dash_charging){
@@ -20,8 +35,14 @@ if(dash_charging){
 		// mach coolen dash scheiß
 		audio_stop_sound(dash_charge_sound);
 		audio_play_sound(snd_dash, 1, false);
+			with(instance_create_layer(x, y, "Inst_upper", obj_dash_rings)){  
+		image_xscale = other.dash_count / other.dash_max;
+		image_yscale = other.dash_count / other.dash_max;
+		if(!other.face_right) image_xscale = -image_xscale;
+		}
 		dash_charging = false;
 		dash_act = true;
+		image_blend = -1;
 		dash = false;
 	}
 }
@@ -38,4 +59,5 @@ if(dash_act){
 	}
 
 if(dash_count <= 3) dash_act = false;
+}
 }

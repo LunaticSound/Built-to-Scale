@@ -12,7 +12,7 @@ if(other.skill_harden_active){
         }
     }
 
-    if(abs(x - other.x) > abs(y - other.y)){
+//    if(abs(x - other.x) > abs(y - other.y)){
         if(other.face_right){ 
             if(grid_pos_x < 8){
                 if(!position_meeting(base_x + (grid_pos_x + 1) * x_step_size, y, obj_notefish)){
@@ -27,8 +27,8 @@ if(other.skill_harden_active){
                     x = base_x + grid_pos_x * x_step_size;
                 }
             }
-        }
-    } else {
+    }
+/*	else {
         if(y > other.y){
             if(grid_pos_y > 1){
                 if(!position_meeting(x, base_y - (grid_pos_y - 1) * y_step_size, obj_notefish)){
@@ -47,7 +47,7 @@ if(other.skill_harden_active){
             }
         }
     }
-
+*/
     var is_correct = false;
     for (var i = 0; i < array_length(correct_notes); i += 1) {
         if(grid_pos_x == correct_notes[i][0] && grid_pos_y == correct_notes[i][1]) {

@@ -4,7 +4,7 @@ function scr_dead(){
 	if(dead){
 	size = 0;
 	max_size = 0;
-	if(global.beat_count == 0) game_restart();
+	if(global.beat_count == 0) room_restart();
 	}
 
 }

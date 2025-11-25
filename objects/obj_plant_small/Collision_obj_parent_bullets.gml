@@ -3,5 +3,6 @@
 
 if(other.shot_back){
 	with(other) instance_destroy();	
+	
 	instance_destroy();
 }
